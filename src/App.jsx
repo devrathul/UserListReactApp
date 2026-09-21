@@ -4,6 +4,7 @@ import About from './components/About'
 import User from './components/User'
 import NotFound from './components/NotFound'
 import Root from './Root'
+import Userdetails from './components/Userdetails'
 
 
 const usersList = [
@@ -26,6 +27,9 @@ const router = createBrowserRouter(
     }, {
       path: "user",
       element: <User userlist={usersList} />,
+    }, {
+      path: "user/:id",
+      element: <Userdetails userlist={usersList} />,
     }, {
       path: "about",
       element: <About />,
