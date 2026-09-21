@@ -6,6 +6,16 @@ import NotFound from './components/NotFound'
 import Root from './Root'
 
 
+const usersList = [
+  { id: 1, name: 'John Doe', email: 'john@example.com' },
+  { id: 2, name: 'Jane Smith', email: 'jane@example.com' },
+  { id: 3, name: 'Ram', email: 'ram@example.com' },
+  { id: 4, name: 'Akshay', email: 'akshay@example.com' },
+  { id: 5, name: 'Akash', email: 'akash@example.com' },
+  { id: 6, name: 'Athira', email: 'athira@example.com' },
+  { id: 7, name: 'Smith', email: 'smith@example.com' },
+];
+
 const router = createBrowserRouter(
   [{
     path: "/",
@@ -15,7 +25,7 @@ const router = createBrowserRouter(
       element: <Home />,
     }, {
       path: "user",
-      element: <User />,
+      element: <User userlist={usersList} />,
     }, {
       path: "about",
       element: <About />,
