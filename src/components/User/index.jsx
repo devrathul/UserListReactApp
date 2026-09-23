@@ -6,7 +6,6 @@ const User = (props) => {
 
     return (
         <div>
-            <h1>User</h1>
             <ul className="grid xm:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {userlist.map((eachuser) => (
                     <li className="shadow-xl p-4 rounded-2xl" key={eachuser.id}>

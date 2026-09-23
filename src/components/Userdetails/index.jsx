@@ -12,10 +12,12 @@ const Userdetails = (props) => {
     const { name, email } = specificuserdetail[0]
 
     return (
-        <div>
-            <h1 className="text-lg text-heading font-semibold">User Details</h1>
-            <h2 className="text-md text-heading font-semibold">{name}</h2>
-            <p className="text-sm text-gray-500">{email}</p>
+        <div className='flex flex-col justify-center items-center h-[80vh]'>
+            <div className='px-5 py-5 border-gray-400 rounded-md shadow-2xl w-full'>
+                <h2 className="items-center text-heading text-4xl font-bold text-center">User Details</h2>
+                <h3 className="text-md text-heading font-semibold">{name}</h3>
+                <p className="text-sm text-gray-500">{email}</p>
+            </div>
         </div>
     )
 }
