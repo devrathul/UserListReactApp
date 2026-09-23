@@ -5,7 +5,7 @@ import User from './components/User'
 import NotFound from './components/NotFound'
 import Root from './Root'
 import Userdetails from './components/Userdetails'
-
+import Contact from './components/Contact'
 
 const usersList = [
   { id: 1, name: 'John Doe', email: 'john@example.com' },
@@ -33,6 +33,9 @@ const router = createBrowserRouter(
     }, {
       path: "about",
       element: <About />,
+    }, {
+      path: "contact",
+      element: <Contact />,
     }, {
       path: "*",
       element: <NotFound />,
